@@ -3,16 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Контакты</title>
   </head>
   <body>
-    <a href="index.html">Главная</a>
-    <a href="catalog/catalog.html">Каталог</a>
-    <a href="contacts.html">Контакты</a>
+    <a class="link_style" href="index.html">Главная</a> <br>
+    <a class="link_style" href="catalog/catalog.html">Каталог</a> <br>
+    <a class="link_style" href="contacts.html">Контакты</a> <br>
 
-    <h1>Контакты</h1>
-    <p><b>Адрес:</b> г. Минск ул. Логойский тракт, 25–1</p>
-    <p><b>Телефон:</b> +375(29)123-45-67</p>
-    <p><b>Email:</b>ZooShop@mail.ru</p>
+    <h1 class="title">Контакты</h1>
+    <fieldset>
+      <legend>Напишите нам</legend>
+      <form action="#">
+        <input class="form__input" type="text" name="username" placeholder="введите имя"><br>
+        <input class="form__input" type="email" name="email" placeholder="введите email"><br>
+        <label for="letterBody">Ваше сообщение</label><br>
+        <textarea class="form__input" name="letter" id="letterBody" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+        
+      </form>
+    </fieldset>
+    <p class="text"><b>Адрес:</b> г. Минск ул. Логойский тракт, 25–1</p>
+    <p class="text"><b>Телефон:</b> +375(29)123-45-67</p>
+    <p class="text"><b>Email:</b>ZooShop@mail.ru</p>
   </body>
 </html>
